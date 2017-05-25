@@ -98,7 +98,7 @@
         
 <hr>
 <dt>
-    <h4 class="name" id="Api"><span class="type-signature"></span>new Api( [serverUrl] [, platform] [, keyValueStore] [, timeout] [, defaultErrorHandler] [, clientID] [, disableBulkApi] [, externalLoginUICallback])</h4>
+    <h4 class="name" id="Api"><span class="type-signature"></span>new Api(args)</h4>
     
     
 </dt>
@@ -106,9 +106,9 @@
 
     
     <div class="description">
-        <p>SugarCRM Javascript API allows users to interact with SugarCRM instance
+        <p>The SugarCRM JavaScript API allows users to interact with SugarCRM instance
 via its REST interface.</p>
-<p>Most of Sugar API methods accept <code>callbacks</code> object:</p>
+<p>Most Sugar API methods accept <code>callbacks</code> object:</p>
 <pre class="prettyprint source"><code>{
     success: function(data) {},
     error: function(error) {},
@@ -125,6 +125,49 @@ via its REST interface.</p>
     
         <h5>Parameters:</h5>
         
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The configuration parameters for the instance.</p>
+                <h6 class="method-params-label method-subparams-label">Properties</h6>
+                
 
 <table class="params table table-striped">
     <thead>
@@ -468,6 +511,13 @@ via its REST interface.</p>
     </tbody>
 </table>
 
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
     
 
     
@@ -545,7 +595,7 @@ via its REST interface.</p>
             
 <hr>
 <dt class="name" id="clientID">
-    <h4 id="clientID"><span class="type-signature"></span>clientID<span class="type-signature"></span></h4>
+    <h4 id="clientID"><span class="type-signature"></span>clientID<span class="type-signature"> :string</span></h4>
 
     
 </dt>
@@ -557,58 +607,20 @@ via its REST interface.</p>
     
 
     
-
-    
-<dl class="details">
-    
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    <dl>
-
-<table class="props table table-striped">
-    <thead>
-    <tr>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-
-            <td class="type">
-            
+        <h5>Type:</h5>
+        <ul>
+            <li>
                 
 <span class="param-type">string</span>
 
 
 
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
+            </li>
+        </ul>
+    
 
     
-    </tbody>
-</table>
-</dl>
-
+<dl class="details">
     
 
 	
@@ -654,7 +666,7 @@ via its REST interface.</p>
             
 <hr>
 <dt class="name" id="debug">
-    <h4 id="debug"><span class="type-signature"></span>debug<span class="type-signature"></span></h4>
+    <h4 id="debug"><span class="type-signature"></span>debug<span class="type-signature"> :boolean</span></h4>
 
     
 </dt>
@@ -667,58 +679,20 @@ of API calls).</p>
     
 
     
-
-    
-<dl class="details">
-    
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    <dl>
-
-<table class="props table table-striped">
-    <thead>
-    <tr>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-
-            <td class="type">
-            
+        <h5>Type:</h5>
+        <ul>
+            <li>
                 
 <span class="param-type">boolean</span>
 
 
 
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
+            </li>
+        </ul>
+    
 
     
-    </tbody>
-</table>
-</dl>
-
+<dl class="details">
     
 
 	
@@ -764,7 +738,7 @@ of API calls).</p>
             
 <hr>
 <dt class="name" id="defaultErrorHandler">
-    <h4 id="defaultErrorHandler"><span class="type-signature"></span>defaultErrorHandler<span class="type-signature"></span></h4>
+    <h4 id="defaultErrorHandler"><span class="type-signature"></span>defaultErrorHandler<span class="type-signature"> :function</span></h4>
 
     
 </dt>
@@ -777,58 +751,20 @@ is not supplied with an error: function in callbacks parameter.</p>
     
 
     
-
-    
-<dl class="details">
-    
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    <dl>
-
-<table class="props table table-striped">
-    <thead>
-    <tr>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-
-            <td class="type">
-            
+        <h5>Type:</h5>
+        <ul>
+            <li>
                 
 <span class="param-type">function</span>
 
 
 
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
+            </li>
+        </ul>
+    
 
     
-    </tbody>
-</table>
-</dl>
-
+<dl class="details">
     
 
 	
@@ -874,7 +810,7 @@ is not supplied with an error: function in callbacks parameter.</p>
             
 <hr>
 <dt class="name" id="serverUrl">
-    <h4 id="serverUrl"><span class="type-signature"></span>serverUrl<span class="type-signature"></span></h4>
+    <h4 id="serverUrl"><span class="type-signature"></span>serverUrl<span class="type-signature"> :string</span></h4>
 
     
 </dt>
@@ -886,58 +822,20 @@ is not supplied with an error: function in callbacks parameter.</p>
     
 
     
-
-    
-<dl class="details">
-    
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    <dl>
-
-<table class="props table table-striped">
-    <thead>
-    <tr>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-
-            <td class="type">
-            
+        <h5>Type:</h5>
+        <ul>
+            <li>
                 
 <span class="param-type">string</span>
 
 
 
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
+            </li>
+        </ul>
+    
 
     
-    </tbody>
-</table>
-</dl>
-
+<dl class="details">
     
 
 	
@@ -983,7 +881,7 @@ is not supplied with an error: function in callbacks parameter.</p>
             
 <hr>
 <dt class="name" id="timeout">
-    <h4 id="timeout"><span class="type-signature"></span>timeout<span class="type-signature"></span></h4>
+    <h4 id="timeout"><span class="type-signature"></span>timeout<span class="type-signature"> :number</span></h4>
 
     
 </dt>
@@ -995,58 +893,20 @@ is not supplied with an error: function in callbacks parameter.</p>
     
 
     
-
-    
-<dl class="details">
-    
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    <dl>
-
-<table class="props table table-striped">
-    <thead>
-    <tr>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-
-            <td class="type">
-            
+        <h5>Type:</h5>
+        <ul>
+            <li>
                 
 <span class="param-type">number</span>
 
 
 
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
+            </li>
+        </ul>
+    
 
     
-    </tbody>
-</table>
-</dl>
-
+<dl class="details">
     
 
 	
@@ -8014,7 +7874,7 @@ if not specified we must fall back to window.location.href</li>
             
 
             <td class="description last"><p>Operation type: read or update (reserved for
-  the future use).</p></td>
+  future use).</p></td>
         </tr>
 
     
@@ -10222,7 +10082,7 @@ regardless of their source.</p>
             <td class="type">
             
                 
-<span class="param-type">Mixed</span>
+<span class="param-type">*</span>
 
 
 
@@ -10675,7 +10535,7 @@ previously queued requests into a single bulk call.</p>
 
     
     <div class="description">
-        <p>Update password</p>
+        <p>Updates password.</p>
     </div>
     
 
@@ -10895,7 +10755,7 @@ previously queued requests into a single bulk call.</p>
             
 <hr>
 <dt>
-    <h4 class="name" id="verifyPassword"><span class="type-signature"></span>verifyPassword(Password [, callbacks])</h4>
+    <h4 class="name" id="verifyPassword"><span class="type-signature"></span>verifyPassword(password [, callbacks])</h4>
     
     
 </dt>
@@ -10903,7 +10763,7 @@ previously queued requests into a single bulk call.</p>
 
     
     <div class="description">
-        <p>Verify password</p>
+        <p>Verifies password.</p>
     </div>
     
 
@@ -10940,7 +10800,7 @@ previously queued requests into a single bulk call.</p>
 
         <tr>
             
-                <td class="name"><code>Password</code></td>
+                <td class="name"><code>password</code></td>
             
 
             <td class="type">
@@ -10965,7 +10825,7 @@ previously queued requests into a single bulk call.</p>
 
             
 
-            <td class="description last"><p>the password to verify</p></td>
+            <td class="description last"><p>The password to verify</p></td>
         </tr>
 
     
@@ -11137,7 +10997,7 @@ previously queued requests into a single bulk call.</p>
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a>
 	
-		on 2017-05-25T09:06:43-07:00
+		on 2017-05-25T09:44:59-07:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>
